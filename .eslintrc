@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "plugins": [
+    "eslint-plugin-vue",
+    "eslint-plugin-jquery"
+  ],
+  "rules": {
+    "semi": ["error", "always"],
+    "indent": ["error", 4, {
+      "ignoredNodes": ["TemplateLiteral > *"]
+    }],
+    "vue/script-indent": ["error", 4, {
+      "baseIndent": 1
+    }],
+    "comma-dangle": ["error", "only-multiline"],
+    "operator-linebreak": ["error", "before", {
+      "overrides": {"?": "after"}
+    }],
+    "vue/html-indent": ["error", 4],
+    "vue/no-v-html": 0,
+    "vue/no-mutating-props": 0,
+    "space-before-function-paren": ["error", "never"]
+  },
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "rules": {
+        "indent": "off"
+      }
+    }
+  ]
+}

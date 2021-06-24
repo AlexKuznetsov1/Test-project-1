@@ -1,0 +1,31 @@
+$white: #fff;
+$black: #000;
+$grey: #808080;
+$brown: #cdbf8a;
+
+$text-white: $white;
+$text-black: $black;
+$text-grey: $grey;
+
+$border-white: $white;
+$border-black: $black;
+$border-grey: $grey;
+
+$background-white: $white;
+$background-black: $black;
+$background-grey: $grey;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+);
+
+$header-height: 100px;
+$header-height-xl: 94px;
+$header-height-md: 60px;
+
+$font-text: Roboto, Arial, Helvetica, sans-serif;
+$time: 500ms;

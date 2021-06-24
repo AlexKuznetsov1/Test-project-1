@@ -1,0 +1,62 @@
+.skip-link {
+  display: none;
+}
+
+body {
+  padding: 0 35px;
+
+  background-color: #ffffe4;
+}
+
+.header {
+  padding: 35px 0;
+
+  background-color: #fff;
+
+  &--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--right {
+
+  }
+
+  &--center {
+
+  }
+
+  &--left {
+
+  }
+}
+
+.block-header-contacts {
+  display: flex;
+  align-items: center;
+
+  &-phone {
+    p {
+      a {
+        display: flex;
+        align-items: center;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.8px;
+
+        @include bef() {
+          $size: 18px;
+
+          width: $size;
+          height: $size;
+          margin-right: 10px;
+
+          @include bg('svg/temporary/phone.png', $size: contain);
+        }
+      }
+    }
+  }
+}
